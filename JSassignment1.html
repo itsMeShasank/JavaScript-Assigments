@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			function reverseArray(array) {
+			document.write("Reversed array : ");
+				for(let i=array.length-1;i>=0;i--) {
+					document.write(array[i]+", ");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			let simplearray=["shasank","charan","hemanth","sai","ram"];
+			document.write("Original array : ");
+			for(let i=0;i<simplearray.length;i++) {
+				document.write(simplearray[i]+", ");
+			}
+			document.write("<br>");
+			reverseArray(simplearray);
+		</script>
+	</body>
+</html>
