@@ -5,30 +5,30 @@
 				let countries =[
 					{
 						name : "India",
-						Population : "5000",
+						Population : 5000,
 						captial : "Delhi"
 					},
 					{
 						name : "Pakisthan",
-						Population : "1000",
+						Population : 1000,
 						captial : "Islamabad"
 						
 					},
 					{
 						name : "Afghanistan",
-						Population : "1000",
+						Population : 1000,
 						captial : "Kabul"
 
 					},
 					{
 						name : "China",
-						Population : "2000",
+						Population : 2000,
 						captial : "Beijing"
 						
 					},
 					{
 						name : "Nepal",
-						Population : "1000",
+						Population : 1000,
 						captial : "Kathmandu"
 						
 					}
@@ -36,7 +36,9 @@
 				document.write("Countries population less than 2000. <br>");
 				
 				for(let i=0;i<countries.length;i++) {
-					document.write(countries[i].population+" ");
+					if(countries[i].population < 2000) {
+						document.write(countries[i].population+" ");
+					}
 				}
 			}
 		</script>
