@@ -1,0 +1,48 @@
+<html>
+<head>
+	<style>
+	
+		.container {
+			width : 200px;
+			height : 200px;
+			background-color : cyan;
+			transition : .5s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		welcome 
+		<img id="image"/>
+	</div>
+	<button onclick = "doSomething()">color change</button>
+	<button onclick = "changeWidth()">width change</button>
+	<button onclick = "addImage()">add Image</button>
+	<button onclick = "RemoveImage()">Remove Image</button>
+	<script>
+		function doSomething() {
+			document.querySelector(".container").innerText = "changing color of div Tag";
+			document.querySelector(".container").style.backgroundColor = "red";
+			console.log("hey");
+		}
+		
+		function changeWidth() {
+			document.querySelector(".container").innerText = "changing size of div Tag";
+			document.querySelector(".container").style.width = "500px";
+			document.querySelector(".container").style.marginLeft = "100px";
+		}
+		function addImage() {
+			const image = document.createElement('image');
+			image.src = "/picture.png";
+			document.querySelector(".container").appendChild(image);
+			document.querySelector(".container").innerText = "Image Inserted";
+			document.querySelector(".container").style.width = "200px";
+		}
+		function RemoveImage() {
+			const element =document.getElementById("image");
+			element.remove();
+			document.querySelector(".container").innerText = "Image Deleted";
+		}
+	</script>
+</body>
+</html>
